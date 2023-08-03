@@ -1,0 +1,55 @@
+Name: ddxs
+Host: 0.0.0.0
+Port: 7001
+
+Redis:
+  Host: localhost
+  Port: 6379
+  Password: "123456"
+  Db: 0
+  enabled: false
+  cacheExpiration: 300
+
+Mysql:
+  Host: localhost
+  Port: 3306
+  Username: "1234567"
+  Password: "123456"
+  Dbname: novel
+  TablePrefix: shipsay_
+
+SiteConfig:
+  ImgUrl: "https://cdn.img.la/"
+
+ZsConfig:
+  Api:
+    BaseURL: "http://localhost:4080/api"
+    Username: "admin"
+    Password: "Complexpass#123"
+    UserAgent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36"
+    LastSyncFile: "./etc/last_sync.txt"
+    IndexName: "article"
+CacheTime:
+  Home:
+    HotTuiJian: 10080 # 热门推荐缓存时间 7天
+    ClassicTuiJian: 10080 # 经典推荐缓存时间 7天
+    PostUpData: 300 # 更新时间缓存时间 5分钟
+  Book:
+    BookInfo: 360 # 书籍信息缓存时间 6小时
+    BookLastChapter: 60 # 书籍最新章节缓存时间 1小时
+    ChapterList: 60 # 章节列表缓存时间 1小时
+    HotBookTuiJian:  1440 # 热门书籍推荐缓存时间 1天
+    XiangGuanTuiJian: 4320 # 相关推荐缓存时间 3天
+    AuthorALl: 360 # 作者所有书籍缓存时间 6小时
+CacheTimeFlag:
+  Home:
+    HotTuiJian: true # 热门推荐缓存标识
+    ClassicTuiJian: true # 经典推荐缓存标识
+    PostUpData: true # 更新时间缓存标识
+  Book:
+    BookInfo: true # 书籍信息缓存标识
+    BookLastChapter: true # 书籍最新章节缓存标识
+    ChapterList: true # 章节列表缓存标识
+    HotBookTuiJian: true # 热门书籍推荐缓存标识
+    XiangGuanTuiJian: true # 相关推荐缓存标识
+    AuthorALl: true # 作者所有书籍缓存标识

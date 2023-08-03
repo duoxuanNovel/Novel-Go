@@ -22,7 +22,5 @@ https://www.xst.la/
 # 多选小说爬虫交流群
  QQ群号 163808179 永久免费
 
-
- 
-# Novel
-# Novel
+# 友情推荐位：
+ipzh.com  海外域名网
